@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C606B0C02BD8C40000D5DC18 /* DocumentProgressTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606B0BF2BD8C40000D5DC18 /* DocumentProgressTaskApp.swift */; };
-		C606B0C22BD8C40000D5DC18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606B0C12BD8C40000D5DC18 /* ContentView.swift */; };
 		C606B0C42BD8C40100D5DC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C606B0C32BD8C40100D5DC18 /* Assets.xcassets */; };
 		C606B0C72BD8C40100D5DC18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C606B0C62BD8C40100D5DC18 /* Preview Assets.xcassets */; };
+		C606B0D02BD8C6A300D5DC18 /* OnboardingFeature in Frameworks */ = {isa = PBXBuildFile; productRef = C606B0CF2BD8C6A300D5DC18 /* OnboardingFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C606B0BC2BD8C40000D5DC18 /* DocumentProgressTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentProgressTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C606B0BF2BD8C40000D5DC18 /* DocumentProgressTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentProgressTaskApp.swift; sourceTree = "<group>"; };
-		C606B0C12BD8C40000D5DC18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C606B0C32BD8C40100D5DC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C606B0C62BD8C40100D5DC18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C606B0CD2BD8C45A00D5DC18 /* DocumentProgressPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DocumentProgressPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C606B0D02BD8C6A300D5DC18 /* OnboardingFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +36,10 @@
 		C606B0B32BD8C40000D5DC18 = {
 			isa = PBXGroup;
 			children = (
+				C606B0CD2BD8C45A00D5DC18 /* DocumentProgressPackage */,
 				C606B0BE2BD8C40000D5DC18 /* DocumentProgressTask */,
 				C606B0BD2BD8C40000D5DC18 /* Products */,
+				C606B0CE2BD8C6A300D5DC18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				C606B0BF2BD8C40000D5DC18 /* DocumentProgressTaskApp.swift */,
-				C606B0C12BD8C40000D5DC18 /* ContentView.swift */,
 				C606B0C32BD8C40100D5DC18 /* Assets.xcassets */,
 				C606B0C52BD8C40100D5DC18 /* Preview Content */,
 			);
@@ -65,6 +67,13 @@
 				C606B0C62BD8C40100D5DC18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C606B0CE2BD8C6A300D5DC18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +92,9 @@
 			dependencies = (
 			);
 			name = DocumentProgressTask;
+			packageProductDependencies = (
+				C606B0CF2BD8C6A300D5DC18 /* OnboardingFeature */,
+			);
 			productName = DocumentProgressTask;
 			productReference = C606B0BC2BD8C40000D5DC18 /* DocumentProgressTask.app */;
 			productType = "com.apple.product-type.application";
@@ -137,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C606B0C22BD8C40000D5DC18 /* ContentView.swift in Sources */,
 				C606B0C02BD8C40000D5DC18 /* DocumentProgressTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +355,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C606B0CF2BD8C6A300D5DC18 /* OnboardingFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardingFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C606B0B42BD8C40000D5DC18 /* Project object */;
 }
